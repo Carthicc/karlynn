@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io("https://karlynn.onrender.com");
+const socket = io(import.meta.env.VITE_SIGNALING_URL);
+
 
 export default function App() {
   const [roomId, setRoomId] = useState("");
