@@ -1,0 +1,20 @@
+{
+  "name": "karlynn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node signaling-server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run dev --prefix react-client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+     "concurrently": "^8.0.0"
+  }
+}
